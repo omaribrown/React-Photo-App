@@ -1,0 +1,14 @@
+.login-container {
+    /* width: 500px; */
+    /* height: 500px; */
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 5em;
+    /* border: 2px solid rgb(21,122,246); */
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.form-box {
+    /* width: 20%; */
+}
