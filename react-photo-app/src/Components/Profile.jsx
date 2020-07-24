@@ -15,6 +15,13 @@ export default class Profile extends React.Component {
             <div>
                 <Tabs defaultActiveKey='profile' id ='uncontrolled-tab-example' className='profile-tabs'>
                     <Tab eventKey='profile' title='Profile Info'>
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <h1>Your Profile</h1>
+                                </Col>
+                            </Row>
+                        </Container>
                         <Card style={{ width: '200px' }}>
                             <Card.Img variant='top' src={girl2} />
                             <Card.Body>
@@ -38,6 +45,11 @@ export default class Profile extends React.Component {
                         {/* <h1>profile infooooo</h1> */}
                     </Tab>
                     <Tab eventKey='posts' title='Posts'>
+                        <Container>
+                            <Row>
+                                <Col><h1>Your Posts</h1></Col>
+                            </Row>
+                        </Container>
                         <CardColumns>
                             <Card>
                                 <Card.Img variant='top' src={girl2} />
@@ -72,6 +84,11 @@ export default class Profile extends React.Component {
                         </CardColumns>
                     </Tab>
                     <Tab eventKey='bookmarks' title='Bookmarks'>
+                        <Container>
+                            <Row>
+                                <Col><h1>Your Bookmarks</h1></Col>
+                            </Row>
+                        </Container>
                         <CardColumns>
                             <Card>
                                 <Card.Img variant='top' src={girl2} />
