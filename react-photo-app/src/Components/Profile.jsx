@@ -7,6 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Card from 'react-bootstrap/esm/Card'
+import CardColumns from 'react-bootstrap/CardColumns'
 
 export default class Profile extends React.Component {
     render() {
@@ -37,7 +38,38 @@ export default class Profile extends React.Component {
                         {/* <h1>profile infooooo</h1> */}
                     </Tab>
                     <Tab eventKey='posts' title='Posts'>
-                        <h1>bookmarks infooooo</h1>
+                        <CardColumns>
+                            <Card>
+                                <Card.Img variant='top' src={girl2} />
+                                <Card.Body>
+                                    <Card.Title>Title</Card.Title>
+                                    <Card.Text>Text</Card.Text>
+                                    <Card.Footer>
+                                        <small className='text-muted'>Upload date</small>
+                                </Card.Footer>
+                                </Card.Body>
+                            </Card>
+                            <Card>
+                                <Card.Img variant='top' src={girl2} />
+                                <Card.Body>
+                                    <Card.Title>Title</Card.Title>
+                                    <Card.Text>Text</Card.Text>
+                                    <Card.Footer>
+                                        <small className='text-muted'>Upload date</small>
+                                    </Card.Footer>
+                                </Card.Body>
+                            </Card>
+                            <Card>
+                                <Card.Img variant='top' src={girl2} />
+                                <Card.Body>
+                                    <Card.Title>Title</Card.Title>
+                                    <Card.Text>Text</Card.Text>
+                                    <Card.Footer>
+                                        <small className='text-muted'>Upload date</small>
+                                    </Card.Footer>
+                                </Card.Body>
+                            </Card>
+                        </CardColumns>
                     </Tab>
                     <Tab eventKey='bookmarks' title='Bookmarks'>
                         <h1>bookmarks infooooo</h1>
