@@ -6,13 +6,22 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
+import Card from 'react-bootstrap/esm/Card'
 
 export default class Profile extends React.Component {
     render() {
         return (
             <div>
                 <Tabs defaultActiveKey='profile' id ='uncontrolled-tab-example' className='profile-tabs'>
-                    <Tab eventKey='profile' title='Information'>
+                    <Tab eventKey='profile' title='Profile Info'>
+                        <Card style={{ width: '200px' }}>
+                            <Card.Img variant='top' src={girl2} />
+                            <Card.Body>
+                                <Card.Title>Jane Doe</Card.Title>
+                                <Card.Subtitle>@PlainJane</Card.Subtitle>
+                                <Card.Text>Bio information</Card.Text>
+                            </Card.Body>
+                        </Card>
                         {/* <Container>
                             <Row className='avi'>
                                 <Col>
