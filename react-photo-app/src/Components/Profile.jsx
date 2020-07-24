@@ -72,7 +72,38 @@ export default class Profile extends React.Component {
                         </CardColumns>
                     </Tab>
                     <Tab eventKey='bookmarks' title='Bookmarks'>
-                        <h1>bookmarks infooooo</h1>
+                        <CardColumns>
+                            <Card>
+                                <Card.Img variant='top' src={girl2} />
+                                <Card.Body>
+                                    <Card.Title>Title</Card.Title>
+                                    <Card.Text>Text</Card.Text>
+                                    <Card.Footer>
+                                        <small className='text-muted'>Upload date</small>
+                                </Card.Footer>
+                                </Card.Body>
+                            </Card>
+                            <Card>
+                                <Card.Img variant='top' src={girl2} />
+                                <Card.Body>
+                                    <Card.Title>Title</Card.Title>
+                                    <Card.Text>Text</Card.Text>
+                                    <Card.Footer>
+                                        <small className='text-muted'>Upload date</small>
+                                    </Card.Footer>
+                                </Card.Body>
+                            </Card>
+                            <Card>
+                                <Card.Img variant='top' src={girl2} />
+                                <Card.Body>
+                                    <Card.Title>Title</Card.Title>
+                                    <Card.Text>Text</Card.Text>
+                                    <Card.Footer>
+                                        <small className='text-muted'>Upload date</small>
+                                    </Card.Footer>
+                                </Card.Body>
+                            </Card>
+                        </CardColumns>
                     </Tab>
                 </Tabs>
 
