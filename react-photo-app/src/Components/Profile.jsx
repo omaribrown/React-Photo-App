@@ -13,7 +13,7 @@ export default class Profile extends React.Component {
             <div>
                 <Tabs defaultActiveKey='profile' id ='uncontrolled-tab-example' className='profile-tabs'>
                     <Tab eventKey='profile' title='Information'>
-                        <Container>
+                        {/* <Container>
                             <Row className='avi'>
                                 <Col>
                                     <img src={girl2} alt='profile avi' />
@@ -24,7 +24,7 @@ export default class Profile extends React.Component {
                                     <h2>@girlNum2</h2>
                                 </Col>
                             </Row>
-                        </Container>
+                        </Container> */}
                         {/* <h1>profile infooooo</h1> */}
                     </Tab>
                     <Tab eventKey='posts' title='Posts'>
