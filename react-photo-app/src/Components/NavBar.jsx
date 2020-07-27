@@ -5,21 +5,25 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import './Styles/NavBar.css'
+import Home from './Home'
+import Profile from './Profile'
+import Login from './Login'
 
-export default function App() {
+export default function NavBar() {
   return (
     <Router>
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/profile">Profile</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </nav>
@@ -27,14 +31,14 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
+          <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
       </div>
@@ -42,14 +46,14 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+// function Home() {
+//   return <h2>Home</h2>;
+// }
 
-function About() {
-  return <h2>About</h2>;
-}
+// function About() {
+//   return <h2>About</h2>;
+// }
 
-function Users() {
-  return <h2>Users</h2>;
-}
+// function Users() {
+//   return <h2>Users</h2>;
+// }

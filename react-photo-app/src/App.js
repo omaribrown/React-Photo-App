@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import NavBar from './Components/NavBar'
 import Login from './Components/Login'
 import Home from './Components/Home'
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <NavBar />
       {/* <Login /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <Profile /> */}
     </div>
   );
